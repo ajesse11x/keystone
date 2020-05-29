@@ -27,7 +27,8 @@
     "typography": "^0.16.17",
     "typography-breakpoint-constants": "^0.15.10",
     "typography-plugin-code": "^0.16.11",
-    "unfetch": "^3.0.0"
+    "unfetch": "^3.0.0",
+    "snyk": "^1.332.1"
   },
   "keywords": [
     "gatsby"
@@ -37,7 +38,9 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.3",
@@ -45,5 +48,6 @@
     "eslint-plugin-jest": "^21.17.0",
     "eslint-plugin-react": "^7.9.1",
     "prettier": "^1.13.4"
-  }
+  },
+  "snyk": true
 }
